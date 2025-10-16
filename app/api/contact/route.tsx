@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: `"${process.env.MAIL_FROM_NAME}" <${process.env.MAIL_FROM}>`,
       to: process.env.ADMIN_EMAIL,
-      subject: `New Enquiry from ${body.name || "Website Visitor"}`,
+      subject: `New Floor Screed Enquiry from ${body.name || "Website Visitor"}`,
       html: `
         <!DOCTYPE html>
         <html>
@@ -66,8 +66,8 @@ export async function POST(req: Request) {
               
               <div class="content">
                 <div class="alert-box">
-                  <h2 class="alert-title">New Website Enquiry</h2>
-                  <p class="alert-text">You have received a new contact form submission from your website.</p>
+                  <h2 class="alert-title">New Floor Screed Enquiry</h2>
+                  <p class="alert-text">You have received a new enquiry for liquid floor screed services from your website.</p>
                 </div>
 
                 <div class="info-grid">
@@ -111,7 +111,7 @@ export async function POST(req: Request) {
 
               <div class="footer">
                 <p class="footer-text">
-                  This email was sent from your website contact form.<br>
+                  This email was sent from your RF Concrete Construction website contact form.<br>
                   Please respond to the customer as soon as possible.
                 </p>
               </div>
@@ -176,18 +176,18 @@ export async function POST(req: Request) {
                   <h2 class="greeting">Hi ${body.name ? body.name.split(" ")[0] : "there"}! 👋</h2>
                   
                   <p class="text">
-                    Thank you for getting in touch with RF Concrete Construction. We've received your enquiry and our team will review it shortly.
+                    Thank you for getting in touch with RF Concrete Construction. We've received your enquiry about our liquid floor screed services and our team will review it shortly.
                   </p>
 
                   <div class="highlight-box">
                     <h3 class="highlight-title">What happens next?</h3>
                     <p class="highlight-text">
-                      Our team typically responds within 24 hours during business days. We'll review your requirements and get back to you with the information you need or to arrange a consultation.
+                      Our team typically responds within 24 hours during business days. We'll review your floor screed requirements and get back to you with the information you need or to arrange a site consultation.
                     </p>
                   </div>
 
                   <p class="text">
-                    In the meantime, feel free to explore our website to learn more about our liquid floor screed services, view our portfolio, or read about the advantages of choosing RF Concrete Construction.
+                    In the meantime, feel free to explore our website to learn more about our liquid floor screed services, view our completed projects in the gallery, or read about the advantages of choosing RF Concrete Construction for your flooring needs.
                   </p>
 
                   <div style="text-align: center;">
@@ -205,7 +205,7 @@ export async function POST(req: Request) {
                       </div>
                       <div class="contact-details">
                         <p class="contact-label">Phone</p>
-                        <p class="contact-value"><a href="tel:+353899407086" class="contact-link">+353 89 940 7086</a></p>
+                        <p class="contact-value"><a href="tel:+3530877642515" class="contact-link">+353 087 764 2515</a></p>
                       </div>
                     </div>
 
@@ -238,7 +238,7 @@ export async function POST(req: Request) {
                   </div>
 
                   <p class="text" style="margin-top: 30px;">
-                    We look forward to working with you!
+                    We look forward to helping you with your floor screed project!
                   </p>
 
                   <p class="text" style="margin-bottom: 0;">
@@ -250,7 +250,7 @@ export async function POST(req: Request) {
                 <div class="footer">
                   <p class="footer-text">
                     RF Concrete Construction - Liquid Floor Screed Specialists<br>
-                    Phone: <a href="tel:+353899407086" style="color: #0ea5e9; text-decoration: none;">+353 89 940 7086</a> | 
+                    Phone: <a href="tel:+3530877642515" style="color: #0ea5e9; text-decoration: none;">+353 087 764 2515</a> | 
                     Email: <a href="mailto:info@rfconcrete.ie" style="color: #0ea5e9; text-decoration: none;">info@rfconcrete.ie</a><br>
                     <a href="https://www.rfconcrete.ie" style="color: #0ea5e9; text-decoration: none;">www.rfconcrete.ie</a>
                   </p>
