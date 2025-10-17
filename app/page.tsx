@@ -41,7 +41,7 @@ export default function HomePage() {
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center text-primary-foreground pt-24 md:pt-0">
+            <div className="max-w-4xl mx-auto text-center text-primary-foreground pt-32 md:pt-16">
               <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance drop-shadow-lg">
                 Professional Liquid Floor Screed Installation
               </h1>

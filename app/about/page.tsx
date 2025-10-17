@@ -23,7 +23,7 @@ export default function AboutPage() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
-      <main className="min-h-screen pt-20">
+      <main className="min-h-screen pt-32">
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-primary to-secondary text-primary-foreground">
           <div className="container mx-auto px-4">
