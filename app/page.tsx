@@ -176,25 +176,25 @@ export default function HomePage() {
                   link: "/services#underfloor-heating",
                 },
               ].map((service, index) => (
-                <Card key={index} className="overflow-hidden border-border hover:shadow-xl transition-shadow group">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <h3 className="font-serif text-2xl font-semibold mb-3 text-foreground">{service.title}</h3>
-                    <p className="text-muted-foreground mb-4 text-pretty leading-relaxed">{service.description}</p>
-                    <Button asChild variant="link" className="p-0 h-auto text-primary">
-                      <Link href={service.link} className="flex items-center gap-2">
+                <Link key={index} href={service.link} className="block">
+                  <Card className="overflow-hidden border-border hover:shadow-xl transition-shadow group h-full cursor-pointer">
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={service.image || "/placeholder.svg"}
+                        alt={service.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="font-serif text-2xl font-semibold mb-3 text-foreground">{service.title}</h3>
+                      <p className="text-muted-foreground mb-4 text-pretty leading-relaxed">{service.description}</p>
+                      <div className="flex items-center gap-2 text-primary font-medium">
                         Learn More <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
 

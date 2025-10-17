@@ -1,6 +1,7 @@
 import { generateMetadata as generateMeta, generateBreadcrumbSchema } from "@/lib/metadata"
 import { StructuredData } from "@/components/structured-data"
 import GalleryClient from "./GalleryClient"
+import galleryData from "@/data/gallery.json"
 
 export const metadata = generateMeta({
   title: "Project Gallery – RF Concrete Construction | Liquid Floor Screed Ireland",
@@ -17,9 +18,74 @@ export default function GalleryPage() {
     { name: "Gallery", url: "/gallery" },
   ])
 
+  const imageGallerySchema = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    name: "RF Concrete Construction Project Gallery",
+    description: "Professional liquid floor screed and underfloor heating installation projects across Ireland",
+    image: galleryData.map((item) => ({
+      "@type": "ImageObject",
+      contentUrl: `https://rfconcreteconstruction.ie${item.src}`,
+      url: `https://rfconcreteconstruction.ie${item.src}`,
+      name: item.title,
+      description: item.caption,
+      caption: item.caption,
+      width: item.width,
+      height: item.height,
+      encodingFormat: "image/webp",
+      thumbnailUrl: item.fallback,
+    })),
+  }
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Project Gallery - RF Concrete Construction",
+    description: "Browse our portfolio of liquid floor screed and underfloor heating installations across Ireland",
+    url: "https://rfconcreteconstruction.ie/gallery",
+    breadcrumb: breadcrumbSchema,
+    image: galleryData.map((item) => ({
+      "@type": "ImageObject",
+      contentUrl: `https://rfconcreteconstruction.ie${item.src}`,
+      url: `https://rfconcreteconstruction.ie${item.src}`,
+      name: item.title,
+      description: item.caption,
+      width: item.width,
+      height: item.height,
+    })),
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: galleryData.length,
+      itemListElement: galleryData.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "ImageObject",
+          contentUrl: `https://rfconcreteconstruction.ie${item.src}`,
+          name: item.title,
+          description: item.caption,
+        },
+      })),
+    },
+  }
+
+  const firstImage = galleryData[0]
+
   return (
     <>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href={firstImage.fallback}
+          imageSrcSet={`${firstImage.src} 1600w`}
+          imageSizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          fetchPriority="high"
+        />
+      </head>
       <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={imageGallerySchema} />
+      <StructuredData data={webPageSchema} />
       <GalleryClient />
     </>
   )

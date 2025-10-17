@@ -2,85 +2,13 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Lightbox } from "@/components/lightbox"
+import { GalleryGrid } from "@/components/gallery/GalleryGrid"
+import galleryData from "@/data/gallery.json"
 
 const categories = ["All", "Residential", "Commercial", "Underfloor Heating", "Industrial"]
 
-const galleryImages = [
-  {
-    src: "/gallery-residential-living-room-screed.jpg",
-    alt: "Modern living room with liquid floor screed",
-    category: "Residential",
-  },
-  {
-    src: "/gallery-commercial-office-floor.jpg",
-    alt: "Commercial office space floor installation",
-    category: "Commercial",
-  },
-  {
-    src: "/gallery-underfloor-heating-system.jpg",
-    alt: "Underfloor heating pipes with screed",
-    category: "Underfloor Heating",
-  },
-  {
-    src: "/gallery-residential-kitchen-floor.jpg",
-    alt: "Kitchen floor screed installation",
-    category: "Residential",
-  },
-  {
-    src: "/gallery-industrial-warehouse-floor.jpg",
-    alt: "Industrial warehouse floor screeding",
-    category: "Industrial",
-  },
-  {
-    src: "/gallery-commercial-retail-space.jpg",
-    alt: "Retail space floor installation",
-    category: "Commercial",
-  },
-  {
-    src: "/gallery-residential-bedroom-screed.jpg",
-    alt: "Bedroom floor with underfloor heating",
-    category: "Residential",
-  },
-  {
-    src: "/gallery-underfloor-heating-installation.jpg",
-    alt: "Underfloor heating system installation",
-    category: "Underfloor Heating",
-  },
-  {
-    src: "/gallery-commercial-restaurant-floor.jpg",
-    alt: "Restaurant floor screed project",
-    category: "Commercial",
-  },
-  {
-    src: "/gallery-residential-bathroom-floor.jpg",
-    alt: "Bathroom floor screed with heating",
-    category: "Residential",
-  },
-  {
-    src: "/gallery-industrial-factory-floor.jpg",
-    alt: "Factory floor screeding project",
-    category: "Industrial",
-  },
-  {
-    src: "/gallery-residential-hallway-screed.jpg",
-    alt: "Hallway floor screed installation",
-    category: "Residential",
-  },
-]
-
 export default function GalleryClient() {
   const [selectedCategory, setSelectedCategory] = useState("All")
-  const [lightboxOpen, setLightboxOpen] = useState(false)
-  const [lightboxIndex, setLightboxIndex] = useState(0)
-
-  const filteredImages =
-    selectedCategory === "All" ? galleryImages : galleryImages.filter((img) => img.category === selectedCategory)
-
-  const openLightbox = (index: number) => {
-    setLightboxIndex(index)
-    setLightboxOpen(true)
-  }
 
   return (
     <main className="min-h-screen pt-20">
@@ -114,36 +42,7 @@ export default function GalleryClient() {
             ))}
           </div>
 
-          {/* Gallery Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {filteredImages.map((image, index) => (
-              <div
-                key={index}
-                className="group relative aspect-square overflow-hidden rounded-lg cursor-pointer bg-muted"
-                onClick={() => openLightbox(index)}
-              >
-                <img
-                  src={image.src || "/placeholder.svg"}
-                  alt={image.alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <p className="text-white font-medium text-sm">{image.alt}</p>
-                    <p className="text-white/70 text-xs mt-1">{image.category}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* No Results Message */}
-          {filteredImages.length === 0 && (
-            <div className="text-center py-20">
-              <p className="text-muted-foreground text-lg">No projects found in this category.</p>
-            </div>
-          )}
+          <GalleryGrid items={galleryData} selectedCategory={selectedCategory} />
         </div>
       </section>
 
@@ -167,14 +66,6 @@ export default function GalleryClient() {
           </div>
         </div>
       </section>
-
-      {/* Lightbox */}
-      <Lightbox
-        images={filteredImages}
-        initialIndex={lightboxIndex}
-        isOpen={lightboxOpen}
-        onClose={() => setLightboxOpen(false)}
-      />
     </main>
   )
 }
