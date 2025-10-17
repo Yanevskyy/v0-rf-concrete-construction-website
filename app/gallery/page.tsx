@@ -6,9 +6,9 @@ import galleryData from "@/data/gallery.json"
 export const metadata = generateMeta({
   title: "Project Gallery – RF Concrete Construction | Liquid Floor Screed Ireland",
   description:
-    "Browse our extensive portfolio of liquid floor screed installations across Ireland. View completed residential homes, commercial offices, retail spaces, industrial warehouses, and underfloor heating projects. See real examples of our quality workmanship.",
+    "Browse our comprehensive portfolio showcasing the complete liquid floor screed process in Ireland — from preparation and underfloor heating installation to mixing, screeding, and finished floors. View real projects across Dublin, Cork, and nationwide.",
   keywords:
-    "floor screed gallery Ireland, liquid screed projects, residential flooring portfolio, commercial screed examples, underfloor heating installations, screed project photos Ireland",
+    "floor screed gallery Ireland, liquid screed projects, underfloor heating installation, screed preparation, screeding process, finished floors portfolio, screed pumping equipment, quality control testing, Dublin Cork Ireland",
   path: "/gallery",
 })
 
@@ -22,7 +22,8 @@ export default function GalleryPage() {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
     name: "RF Concrete Construction Project Gallery",
-    description: "Professional liquid floor screed and underfloor heating installation projects across Ireland",
+    description:
+      "Professional liquid floor screed and underfloor heating installation projects showcasing our complete workflow from preparation to finished floors across Ireland",
     image: galleryData.map((item) => ({
       "@type": "ImageObject",
       contentUrl: `https://rfconcreteconstruction.ie${item.src}`,
@@ -34,6 +35,7 @@ export default function GalleryPage() {
       height: item.height,
       encodingFormat: "image/webp",
       thumbnailUrl: item.fallback,
+      keywords: item.category,
     })),
   }
 
@@ -41,7 +43,8 @@ export default function GalleryPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Project Gallery - RF Concrete Construction",
-    description: "Browse our portfolio of liquid floor screed and underfloor heating installations across Ireland",
+    description:
+      "Browse our portfolio of liquid floor screed and underfloor heating installations showcasing our complete process across Ireland",
     url: "https://rfconcreteconstruction.ie/gallery",
     breadcrumb: breadcrumbSchema,
     image: galleryData.map((item) => ({
@@ -69,20 +72,8 @@ export default function GalleryPage() {
     },
   }
 
-  const firstImage = galleryData[0]
-
   return (
     <>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href={firstImage.fallback}
-          imageSrcSet={`${firstImage.src} 1600w`}
-          imageSizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-          fetchPriority="high"
-        />
-      </head>
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={imageGallerySchema} />
       <StructuredData data={webPageSchema} />

@@ -5,7 +5,16 @@ import { Button } from "@/components/ui/button"
 import { GalleryGrid } from "@/components/gallery/GalleryGrid"
 import galleryData from "@/data/gallery.json"
 
-const categories = ["All", "Residential", "Commercial", "Underfloor Heating", "Industrial"]
+const categories = [
+  "All",
+  "Preparation Stage",
+  "Underfloor Heating Installation",
+  "Mixing & Pumping",
+  "Screeding in Progress",
+  "Finished Floors",
+  "External Projects",
+  "Testing & Quality Control",
+]
 
 export default function GalleryClient() {
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -18,8 +27,8 @@ export default function GalleryClient() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 text-balance">Our Work</h1>
             <p className="text-xl text-primary-foreground/90 text-pretty leading-relaxed">
-              Explore our portfolio of completed projects across Ireland. From residential homes to large commercial
-              spaces, see the quality and precision we bring to every job.
+              Explore our portfolio showcasing the complete process of liquid floor screed installation — from
+              preparation and underfloor heating to finished floors across Ireland.
             </p>
           </div>
         </div>
@@ -28,18 +37,20 @@ export default function GalleryClient() {
       {/* Gallery Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? "default" : "outline"}
-                onClick={() => setSelectedCategory(category)}
-                className="min-w-[120px]"
-              >
-                {category}
-              </Button>
-            ))}
+          <div className="py-6 mb-12 border-b">
+            <div className="flex flex-wrap justify-center gap-3 max-w-5xl mx-auto">
+              {categories.map((category) => (
+                <Button
+                  key={category}
+                  variant={selectedCategory === category ? "default" : "outline"}
+                  onClick={() => setSelectedCategory(category)}
+                  className="rounded-full min-w-[140px] transition-all duration-200 hover:scale-105"
+                  size="lg"
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
           </div>
 
           <GalleryGrid items={galleryData} selectedCategory={selectedCategory} />

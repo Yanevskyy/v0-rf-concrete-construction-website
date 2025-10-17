@@ -43,7 +43,10 @@ export function GalleryGrid({ items, selectedCategory = "All" }: GalleryGridProp
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {filteredItems.map((item, index) => (
-          <figure key={item.id} className="m-0">
+          <figure
+            key={item.id}
+            className="group m-0 relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+          >
             <GalleryImage
               src={item.src}
               fallback={item.fallback}
@@ -54,7 +57,9 @@ export function GalleryGrid({ items, selectedCategory = "All" }: GalleryGridProp
               priority={index === 0} // First image gets priority for LCP
               onClick={() => openLightbox(index)}
             />
-            <figcaption className="sr-only">{item.caption}</figcaption>
+            <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+              {item.caption}
+            </figcaption>
           </figure>
         ))}
       </div>

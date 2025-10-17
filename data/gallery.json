@@ -8,7 +8,7 @@
     "alt": "Underfloor heating installation with wooden frame construction in Dublin residential property",
     "title": "Underfloor Heating Installation — Dublin",
     "caption": "Professional underfloor heating pipe installation with wooden frame construction for optimal heat distribution.",
-    "category": "Underfloor Heating"
+    "category": "Underfloor Heating Installation"
   },
   {
     "id": "underfloor-heating-pipes-residential-02",
@@ -19,7 +19,7 @@
     "alt": "Underfloor heating pipes installation in residential construction project Dublin",
     "title": "Residential Underfloor Heating — Dublin",
     "caption": "Precision-laid underfloor heating pipes ready for liquid screed installation in new build home.",
-    "category": "Underfloor Heating"
+    "category": "Underfloor Heating Installation"
   },
   {
     "id": "underfloor-heating-corridor-detail-03",
@@ -30,7 +30,7 @@
     "alt": "Detailed underfloor heating pipes in corridor with wooden frame construction Ireland",
     "title": "Corridor Underfloor Heating — Ireland",
     "caption": "Detailed view of underfloor heating pipe layout in corridor with wooden frame construction.",
-    "category": "Underfloor Heating"
+    "category": "Underfloor Heating Installation"
   },
   {
     "id": "underfloor-heating-completed-room-04",
@@ -41,7 +41,7 @@
     "alt": "Completed underfloor heating installation in residential room ready for screed Dublin",
     "title": "Completed Underfloor Heating — Dublin",
     "caption": "Fully installed underfloor heating system ready for liquid screed application in residential property.",
-    "category": "Underfloor Heating"
+    "category": "Underfloor Heating Installation"
   },
   {
     "id": "liquid-screed-pouring-underfloor-heating-05",
@@ -52,7 +52,7 @@
     "alt": "Liquid screed pouring process over underfloor heating pipes Dublin Ireland",
     "title": "Liquid Screed Pouring — Dublin",
     "caption": "Professional liquid screed pouring over underfloor heating pipes for optimal thermal conductivity.",
-    "category": "Underfloor Heating"
+    "category": "Screeding in Progress"
   },
   {
     "id": "liquid-screed-radial-pattern-06",
@@ -63,7 +63,7 @@
     "alt": "Liquid screed pouring over radial underfloor heating pattern residential Dublin",
     "title": "Radial Underfloor Heating — Dublin",
     "caption": "Liquid screed application over radial underfloor heating pattern for efficient heat distribution.",
-    "category": "Residential"
+    "category": "Screeding in Progress"
   },
   {
     "id": "screed-leveling-specialized-tools-07",
@@ -74,7 +74,7 @@
     "alt": "Professional screed leveling with specialized tools and equipment Ireland",
     "title": "Professional Screed Leveling — Ireland",
     "caption": "Expert screed leveling using specialized tools to ensure perfectly flat surface finish.",
-    "category": "Residential"
+    "category": "Screeding in Progress"
   },
   {
     "id": "residential-liquid-screed-brick-walls-08",
@@ -85,7 +85,7 @@
     "alt": "Residential liquid screed installation with brick walls Dublin home renovation",
     "title": "Residential Screed Installation — Dublin",
     "caption": "Liquid screed installation in residential property with exposed brick walls during renovation.",
-    "category": "Residential"
+    "category": "Screeding in Progress"
   },
   {
     "id": "liquid-screed-residential-space-09",
@@ -96,7 +96,7 @@
     "alt": "Liquid screed pouring in residential space with underfloor heating Dublin",
     "title": "Residential Liquid Screed — Dublin",
     "caption": "Fresh liquid screed pouring in residential space with integrated underfloor heating system.",
-    "category": "Residential"
+    "category": "Screeding in Progress"
   },
   {
     "id": "flow-cone-testing-quality-control-10",
@@ -107,7 +107,7 @@
     "alt": "Quality control flow cone testing of liquid screed consistency Ireland",
     "title": "Quality Control Testing — Ireland",
     "caption": "Professional flow cone testing to ensure optimal liquid screed consistency and quality standards.",
-    "category": "Commercial"
+    "category": "Testing & Quality Control"
   },
   {
     "id": "residential-exterior-screed-equipment-11",
@@ -118,7 +118,7 @@
     "alt": "Residential construction exterior with concrete screed paver equipment Dublin",
     "title": "Residential Project Setup — Dublin",
     "caption": "Professional screed pumping equipment setup at residential construction site.",
-    "category": "Residential"
+    "category": "External Projects"
   },
   {
     "id": "underfloor-heating-black-insulation-12",
@@ -129,7 +129,7 @@
     "alt": "Interior room with underfloor heating pipes on black insulation panels Dublin",
     "title": "Underfloor Heating Insulation — Dublin",
     "caption": "Underfloor heating pipes installed on black insulation panels for maximum thermal efficiency.",
-    "category": "Underfloor Heating"
+    "category": "Preparation Stage"
   },
   {
     "id": "bathroom-wet-concrete-screed-13",
@@ -140,7 +140,7 @@
     "alt": "Bathroom with wet concrete screed being poured Dublin residential renovation",
     "title": "Bathroom Screed Installation — Dublin",
     "caption": "Fresh concrete screed being poured in bathroom during residential renovation project.",
-    "category": "Residential"
+    "category": "Mixing & Pumping"
   },
   {
     "id": "unilin-underfloor-heating-panels-14",
@@ -151,7 +151,7 @@
     "alt": "UNILIN underfloor heating insulation panels installation Ireland",
     "title": "UNILIN Heating Panels — Ireland",
     "caption": "Premium UNILIN underfloor heating insulation panels for superior thermal performance.",
-    "category": "Underfloor Heating"
+    "category": "Preparation Stage"
   },
   {
     "id": "open-plan-underfloor-heating-15",
@@ -162,7 +162,7 @@
     "alt": "Large open plan space with underfloor heating pipes throughout Dublin",
     "title": "Open Plan Underfloor Heating — Dublin",
     "caption": "Extensive underfloor heating pipe installation in large open plan residential space.",
-    "category": "Underfloor Heating"
+    "category": "Underfloor Heating Installation"
   },
   {
     "id": "doorway-fresh-concrete-screed-16",
@@ -173,7 +173,7 @@
     "alt": "Doorway view of freshly poured concrete screed Dublin residential",
     "title": "Fresh Concrete Screed — Dublin",
     "caption": "Doorway perspective showing freshly poured concrete screed with smooth finish.",
-    "category": "Residential"
+    "category": "Finished Floors"
   },
   {
     "id": "hallway-smooth-finished-screed-17",
@@ -184,7 +184,7 @@
     "alt": "Hallway with smooth finished concrete screed Dublin home",
     "title": "Hallway Screed Finish — Dublin",
     "caption": "Perfectly smooth finished concrete screed in residential hallway.",
-    "category": "Residential"
+    "category": "Finished Floors"
   },
   {
     "id": "cemfloor-liquid-screed-product-18",
@@ -195,7 +195,7 @@
     "alt": "Cemfloor liquid screed product packaging Ireland",
     "title": "Cemfloor Liquid Screed — Ireland",
     "caption": "Premium Cemfloor liquid screed product used for professional installations.",
-    "category": "Commercial"
+    "category": "Testing & Quality Control"
   },
   {
     "id": "finished-screed-trowel-finish-19",
@@ -206,7 +206,7 @@
     "alt": "Close-up of finished concrete screed showing professional trowel finish Dublin",
     "title": "Professional Trowel Finish — Dublin",
     "caption": "Close-up detail of expertly finished concrete screed with professional trowel technique.",
-    "category": "Residential"
+    "category": "Finished Floors"
   },
   {
     "id": "residential-room-wet-screed-windows-20",
@@ -217,7 +217,7 @@
     "alt": "Residential room with fresh wet concrete screed floor and windows Dublin",
     "title": "Residential Room Screed — Dublin",
     "caption": "Fresh wet concrete screed in residential room with natural light from windows.",
-    "category": "Residential"
+    "category": "Screeding in Progress"
   },
   {
     "id": "shiny-reflective-wet-screed-21",
@@ -228,7 +228,7 @@
     "alt": "Room with shiny reflective wet concrete screed finish Dublin",
     "title": "Reflective Screed Finish — Dublin",
     "caption": "Highly reflective wet concrete screed finish showing professional application quality.",
-    "category": "Residential"
+    "category": "Finished Floors"
   },
   {
     "id": "hallway-block-walls-wet-screed-22",
@@ -239,7 +239,7 @@
     "alt": "Hallway with block walls and wet concrete screed floor Dublin construction",
     "title": "Hallway Construction — Dublin",
     "caption": "Wet concrete screed installation in hallway with block wall construction.",
-    "category": "Residential"
+    "category": "Screeding in Progress"
   },
   {
     "id": "large-room-heating-grid-pattern-23",
@@ -250,7 +250,7 @@
     "alt": "Large room with underfloor heating pipes in grid pattern before screed Dublin",
     "title": "Grid Pattern Underfloor Heating — Dublin",
     "caption": "Systematic grid pattern underfloor heating pipe layout in large room before screed application.",
-    "category": "Underfloor Heating"
+    "category": "Underfloor Heating Installation"
   },
   {
     "id": "modern-barn-house-exterior-equipment-24",
@@ -261,7 +261,7 @@
     "alt": "Modern dark barn-style house exterior with screed pump equipment Ireland",
     "title": "Modern Barn House Project — Ireland",
     "caption": "Contemporary barn-style house with professional screed pumping equipment on site.",
-    "category": "Residential"
+    "category": "External Projects"
   },
   {
     "id": "renovation-wet-screed-reflective-25",
@@ -272,7 +272,7 @@
     "alt": "Room under renovation with wet concrete screed and reflective finish Dublin",
     "title": "Renovation Screed Work — Dublin",
     "caption": "Wet concrete screed with reflective finish during residential renovation project.",
-    "category": "Residential"
+    "category": "Screeding in Progress"
   },
   {
     "id": "wet-screed-pump-hose-pouring-26",
@@ -283,7 +283,7 @@
     "alt": "Close-up of wet concrete screed with pump hose during pouring Dublin",
     "title": "Screed Pouring Process — Dublin",
     "caption": "Close-up view of concrete screed pouring process with pump hose in action.",
-    "category": "Residential"
+    "category": "Mixing & Pumping"
   },
   {
     "id": "heating-pipes-red-insulation-wooden-frame-27",
@@ -294,7 +294,7 @@
     "alt": "Underfloor heating pipes with red insulation in wooden frame construction Dublin",
     "title": "Insulated Underfloor Heating — Dublin",
     "caption": "Underfloor heating pipes with red thermal insulation in wooden frame construction.",
-    "category": "Underfloor Heating"
+    "category": "Preparation Stage"
   },
   {
     "id": "wet-screed-highly-reflective-surface-28",
@@ -305,7 +305,7 @@
     "alt": "Room with wet concrete screed showing highly reflective surface finish Dublin",
     "title": "High-Quality Screed Finish — Dublin",
     "caption": "Wet concrete screed with highly reflective surface demonstrating superior finish quality.",
-    "category": "Residential"
+    "category": "Finished Floors"
   },
   {
     "id": "hallway-corridor-fresh-wet-screed-29",
@@ -316,6 +316,6 @@
     "alt": "Hallway corridor with fresh wet concrete screed and smooth reflective finish Dublin",
     "title": "Corridor Screed Installation — Dublin",
     "caption": "Fresh wet concrete screed in hallway corridor with smooth, reflective finish.",
-    "category": "Residential"
+    "category": "Finished Floors"
   }
 ]
