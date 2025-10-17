@@ -266,7 +266,12 @@ export default function ContactClient() {
                   </p>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full font-bold text-base py-6 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]"
+                  disabled={isSubmitting}
+                >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
 
